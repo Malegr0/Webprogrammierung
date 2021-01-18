@@ -50,3 +50,12 @@ body {
     margin-bottom: 1.5rem;
     margin-left: 1.5rem;
 }
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
