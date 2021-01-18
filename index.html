@@ -7,29 +7,18 @@
     <title>Dino-World Homepage</title>
   </head>
   <body>
-	<form>
-		<label for="suche">Suchbegriff eingeben: </label> 
-		<input type="search" id="suche" placeholder="Suche...">
-		<button type="button"> Suchen! </button>
-		</br>
-		<label for="erweiterte_suche"> Erweiterte Suche </label>
-		<input type="checkbox" id="erweiterte_suche" >
-	</form>
-	<div>
-		<ol>
-			<li>
-				<a href="index.html">Home</a>
-			</li>
-			<li>
-				<a href="./dinolist.html">Dinoliste</a>
-			</li>
-			<li>
-				<a href="#">Webshop (coming soon)</a>
-			</li>
-			<li>
-				<a href="#">Forum (coming maybe)</a>
-			</li>
-		</ol>
+	<div class="flex-container">
+		<h2 class="nav-element">Dino World</h2>
+		<a class="nav-element active" href="index.html">Home</a>
+		<a class="nav-element" href="./dinolist.html">Dinoliste</a>
+		<a class="nav-element" href="#">Webshop (coming soon)</a>
+		<a class="nav-element" href="#">Forum (coming maybe)</a>
+
+		<form class="nav-element">
+			<label for="suche">Suchbegriff eingeben: </label>
+			<input type="search" id="suche" placeholder="Suche...">
+			<button type="button"> Suchen! </button>
+		</form>
 	</div>
 	<p>
 		<h1>Willkommen auf der Dino-World Homepage</h1>

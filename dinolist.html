@@ -10,22 +10,18 @@
 </head>
 
 <body>
-    <h1>Dino World</h1>
-    <div class="div1">
-        <ol>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="./dinolist.html">Dinoliste</a>
-            </li>
-            <li>
-                <a href="#">Webshop (coming soon)</a>
-            </li>
-            <li>
-                <a href="#">Forum (coming maybe)</a>
-            </li>
-        </ol>
+    <div class="flex-container">
+        <h2 class="nav-element">Dino World</h2>
+        <a class="nav-element" href="index.html">Home</a>
+        <a class="nav-element active" href="./dinolist.html">Dinoliste</a>
+        <a class="nav-element" href="#">Webshop (coming soon)</a>
+        <a class="nav-element" href="#">Forum (coming maybe)</a>
+
+        <form class="nav-element">
+            <label for="suche">Suchbegriff eingeben: </label>
+            <input type="search" id="suche" placeholder="Suche...">
+            <button type="button"> Suchen! </button>
+        </form>
     </div>
     <h2><u>Unsere favorite Dinoarten</u></h2>
     <ul>

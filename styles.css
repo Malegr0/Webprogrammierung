@@ -1,29 +1,61 @@
-h1 {
-    color: green;
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: darkgreen;
 }
-h3 {
+
+.nav-element {
+    text-decoration: none;
+    margin: 1.5rem;
+    color: white;
+    line-height: 2rem;
+}
+
+.active {
     text-decoration: underline;
-    font-style: italic
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 30em) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 50em) {
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 body {
-    background-image: url("https://previews.123rf.com/images/afanasia/afanasia1707/afanasia170700033/82307904-nahtloses-karikaturdinosauriermuster-vektor-dino-hintergrund-f%C3%BCr-kinder-design-.jpg");
-    background-repeat: repeat;
-}
-p {
-    font-family: Arial, "Times New Roman";
-}
-.div1 {
-    background-color: #66ff66;
-}
-.div2 {
-    background-color: #66ff66;
-}
-.div3 {
-    background-color: #66ff66;
-}
-.div4 {
-    background-color: #66ff66;
-}
-.div5 {
-    background-color: #66ff66;
+    margin: 0;
+
+    height: 100%;
+
+    -webkit-background-size: cover;
+
+    -moz-background-size: cover;
+
+    -o-background-size: cover;
+
+    background-size: cover;
+
+    background: rgb(2, 83, 46);
+
+    background-repeat:no-repeat;
+
+    background: -webkit-linear-gradient(rgb(2, 83, 46), rgb(43, 143, 88));
+
+    background: -moz-linear-gradient(rgb(2, 83, 46),  rgb(43, 143, 88));
+
+    background: -ms-linear-gradient(rgb(2, 83, 46), rgb(43, 143, 88));
+
+    background: -o-linear-gradient( rgb(2, 83, 46),  rgb(43, 143, 88));
+
+    background: linear-gradient(rgb(2, 83, 46),  rgb(43, 143, 88));
+
 }
