@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" href="./stylesheets/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dino-World Homepage</title>
+</head>
+<body>
+    <div class="flex-container">
+        <h2 class="nav-element">Dino World</h2>
+        <a class="nav-element" href="index.html">Home</a>
+        <a class="nav-element" href="dinolist.html">Dinoliste</a>
+        <a class="nav-element" href="period.html">Zeitalter</a>
+        <a class="nav-element underline" href="forum.html">Forum</a>
+        <a class="nav-element" href="#">Webshop (coming soon)</a>
+        <form class="nav-element">
+            <label for="suche">Suchbegriff eingeben: </label>
+            <input type="search" id="suche" placeholder="Suche..." />
+            <button type="button">Suchen!</button>
+        </form>
+    </div>
+    <body>
+        <div>
+            <h1>
+                Willkommen auf dem Dino-World Forum!
+            </h1>
+            <form id="commentForm" autocomplete="off">
+                <p>Hier können sie einen neuen Kommentar verfassen:</p>
+                <label for="kommentar"> Kommentar: </label>
+                <input id="kommentar" type="text" name="comment" />
+                <input type="submit" value="Submit">
+            </form>
+            <h3>
+                Kommentare zur Dino-World:<h3 />
+                <table id="kommentar-tabelle">
+
+                    <table />
+        </div>
+        <script type="module" src="./javascripts/frontend.js"></script>
+    </body>
+</html>

@@ -22,28 +22,26 @@
 }
 
 @media (min-width: 700px) {
-    .grid{
+    .grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media (min-width: 1000px) {
-    .grid{
+    .grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1800px) {
-    .grid{
+    .grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 body {
     margin: 0;
-
     height: 100%;
-
 }
 
 .grid-element {
@@ -51,11 +49,20 @@ body {
     margin-left: 1.5rem;
 }
 
-table, td, th {
+table,
+td,
+th {
     border: 1px solid black;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    /* center checkbox horizontally */
+    vertical-align: middle;
+    /* center checkbox vertically */
 }
