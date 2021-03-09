@@ -111,12 +111,8 @@ app.post("/comment", function (request, response) {
 
 app.post("/setFavourite", function (req, res) {
   setCookieIfNotAlreadySet(req, res);
-  console.log("Value: " + req.body.value);
-  console.log("Index: " + req.body.index);
-
   userArray[findUserIndex(req.cookies.userId)].favorites[req.body.index] =
     req.body.value;
-  console.log(userArray[findUserIndex(req.cookies.userId)]);
 });
 
 app.get("/getFavoritesForUser", function (req, res) {
